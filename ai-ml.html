@@ -107,6 +107,19 @@
       .cbp:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(184, 116, 16, 0.2); color: var(--bg) !important; }
 
       @media (max-width: 900px) {
+        .pl { gap: 0; }
+        .pj { 
+          background: transparent; 
+          border: none; 
+          border-bottom: 1px solid var(--bd); 
+          border-radius: 0; 
+          padding: 2.6rem 0; 
+        }
+        .pj:last-child { border-bottom: none; }
+        .pj:hover { transform: none; }
+        .pbody { padding: 0; }
+        .phead { flex-direction: column; gap: 0.7rem; margin-bottom: 1.5rem; }
+        .ptitle { font-size: 1.8rem; }
         .pbottom { grid-template-columns: 1fr; gap: 2rem; }
       }
     </style>
