@@ -30,9 +30,6 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Outfit:wght@200;300;400;500&family=JetBrains+Mono:wght@300;400&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
     <style>
       :root {
         --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -45,8 +42,8 @@
         --bgs: #e0d9c8;
         --t1: #120e08;
         --t2: #5a5040;
-        --t3: #9a8e79;
-        --ac: #b87410;
+        --t3: #756a57;
+        --ac: #a3660d;
         --acl: #f5e3bc;
         --acd: #8a5508;
         --bd: rgba(184, 116, 16, 0.11);
@@ -69,8 +66,8 @@
         --bgs: #1d1a10;
         --t1: #ede7d4;
         --t2: #726558;
-        --t3: #3b3328;
-        --ac: #d4a847;
+        --t3: #5c5244;
+        --ac: #f0d58b;
         --acl: #1f1604;
         --acd: #ecc060;
         --bd: rgba(212, 168, 71, 0.09);
@@ -1774,9 +1771,9 @@
 
     <!-- HERO -->
     <section id="hero" style="position: relative; overflow: hidden">
-      <img src="/leaf 1.png" class="hero-leaf leaf-1" alt="" />
-      <img src="/leaf 5.png" class="hero-leaf leaf-2" alt="" />
-      <img src="/leaf 7.png" class="leaf-fg" alt="" />
+      <img src="/leaf 1.png" class="hero-leaf leaf-1" alt="" loading="lazy" decoding="async" />
+      <img src="/leaf 5.png" class="hero-leaf leaf-2" alt="" loading="lazy" decoding="async" />
+      <img src="/leaf 7.png" class="leaf-fg" alt="" loading="lazy" decoding="async" />
       <div class="w">
         <div class="hero-grid">
           <div class="hero-left">
@@ -1839,7 +1836,7 @@
                 <div class="st-n">∞</div>
                 <div class="st-l">Commits Shipped</div>
               </div>
-              <!-- <img src="/leaf 7.png" class="hstats-leaf" alt="" /> -->
+              <!-- <img src="/leaf 7.png" class="hstats-leaf" alt="" loading="lazy" decoding="async" /> -->
             </div>
           </div>
 
@@ -1853,7 +1850,7 @@
                   <span class="hv-label">Current Focus</span>
                   <div class="hv-status">Open to Work</div>
                 </div>
-                <h4 class="hv-focus-title">
+                <h2 class="hv-focus-title">
                   <span>High-Performance</span> Apps<br />+ Backend
                 </h4>
                 <div class="hv-focus-grid">
@@ -1879,28 +1876,28 @@
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                   alt="React"
-                />
+                loading="lazy" decoding="async" />
                 <span class="hv-stack-label">React.js</span>
               </div>
               <div class="hv-stack-card">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
                   alt="TS"
-                />
+                loading="lazy" decoding="async" />
                 <span class="hv-stack-label">TypeScript</span>
               </div>
               <div class="hv-stack-card">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
                   alt="Node"
-                />
+                loading="lazy" decoding="async" />
                 <span class="hv-stack-label">Node.js</span>
               </div>
               <div class="hv-stack-card">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
                   alt="MongoDB"
-                />
+                loading="lazy" decoding="async" />
                 <span class="hv-stack-label">Express / DB</span>
               </div>
             </div>
@@ -1952,10 +1949,69 @@
         <div class="sl">Selected Work</div>
         <h2 class="sh wtitle">Things I've shipped.</h2>
         <div class="pl">
-          <!-- 01 — Favian Garden -->
+          <!-- 01 — Distributed Rate Limiter -->
           <div class="pj" data-pj>
             <div class="pj-bg"></div>
             <div class="pnum">01</div>
+            <div class="pbody">
+              <div class="phead">
+                <div>
+                  <div class="ptype">Backend · System Design</div>
+                  <h3 class="ptitle">Distributed Rate<br />Limiter</h3>
+                </div>
+                <div class="plinks">
+                  <a
+                    href="https://github.com/vikram-2101/Distributed-Rate-Limiter"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="ch ch-g"
+                   aria-label="GitHub Repository">
+                    <svg
+                      width="11"
+                      height="11"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                      />
+                    </svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+              <div class="pbottom">
+                <div>
+                  <div class="ptags">
+                    <span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">Redis</span><span class="tag">Docker</span><span class="tag">Lua</span>
+                  </div>
+                  <div class="ppreview">
+                    <img
+                      src="/Distributed.png"
+                      alt="Distributed Rate Limiter"
+                      style="width: 100%; height: 100%; object-fit: cover"
+                    loading="lazy" decoding="async" />
+                  </div>
+                </div>
+                <div>
+                  <p class="pdesc">
+                    Built a production-grade distributed rate limiter using Node.js, TypeScript, Redis, and Docker to enforce global request limits across multiple application instances. Implemented Redis-backed atomic operations with Lua scripting for consistent rate limiting under concurrent traffic.
+                  </p>
+                  <div class="pimp">
+                    <div class="pimp-l">Why it matters</div>
+                    <div class="pimp-t">
+                      Designed the system for low latency, horizontal scalability, and fault tolerance, with comprehensive testing, benchmarking, and containerized deployment.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02 — Favian Garden -->
+          <div class="pj" data-pj>
+            <div class="pj-bg"></div>
+            <div class="pnum">02</div>
             <div class="pbody">
               <div class="phead">
                 <div>
@@ -1968,7 +2024,7 @@
                     target="_blank"
                     rel="noreferrer"
                     class="ch ch-g"
-                  >
+                   aria-label="GitHub Repository">
                     <svg
                       width="11"
                       height="11"
@@ -1986,7 +2042,7 @@
                     target="_blank"
                     rel="noreferrer"
                     class="ch ch-l"
-                    >↗ Live</a
+                     aria-label="Live Website">↗ Live</a
                   >
                 </div>
               </div>
@@ -2004,7 +2060,7 @@
                       src="/image.png"
                       alt="Favian Garden"
                       style="width: 100%; height: 100%; object-fit: cover"
-                    />
+                    loading="lazy" decoding="async" />
                   </div>
                 </div>
                 <div>
@@ -2026,10 +2082,10 @@
             </div>
           </div>
 
-          <!-- 02 — Food Ordering Platform -->
+          <!-- 03 — Food Ordering Platform -->
           <div class="pj" data-pj>
             <div class="pj-bg"></div>
-            <div class="pnum">02</div>
+            <div class="pnum">03</div>
             <div class="pbody">
               <div class="phead">
                 <div>
@@ -2042,7 +2098,7 @@
                     target="_blank"
                     rel="noreferrer"
                     class="ch ch-g"
-                  >
+                   aria-label="GitHub Repository">
                     <svg
                       width="11"
                       height="11"
@@ -2060,7 +2116,7 @@
                     target="_blank"
                     rel="noreferrer"
                     class="ch ch-l"
-                    >↗ Live</a
+                     aria-label="Live Website">↗ Live</a
                   >
                 </div>
               </div>
@@ -2077,7 +2133,7 @@
                       src="/image%20copy.png"
                       alt="Food Ordering Platform"
                       style="width: 100%; height: 100%; object-fit: cover"
-                    />
+                    loading="lazy" decoding="async" />
                   </div>
                 </div>
                 <div>
@@ -2098,10 +2154,10 @@
             </div>
           </div>
 
-          <!-- 03 — Cara E-commerce -->
+          <!-- 04 — Cara E-commerce -->
           <div class="pj" data-pj>
             <div class="pj-bg"></div>
-            <div class="pnum">03</div>
+            <div class="pnum">04</div>
             <div class="pbody">
               <div class="phead">
                 <div>
@@ -2114,7 +2170,7 @@
                     target="_blank"
                     rel="noreferrer"
                     class="ch ch-g"
-                  >
+                   aria-label="GitHub Repository">
                     <svg
                       width="11"
                       height="11"
@@ -2132,7 +2188,7 @@
                     target="_blank"
                     rel="noreferrer"
                     class="ch ch-l"
-                    >↗ Live</a
+                     aria-label="Live Website">↗ Live</a
                   >
                 </div>
               </div>
@@ -2147,7 +2203,7 @@
                       src="/cara.png"
                       alt="Cara Store"
                       style="width: 100%; height: 100%; object-fit: cover"
-                    />
+                    loading="lazy" decoding="async" />
                   </div>
                 </div>
                 <div>
@@ -2170,10 +2226,10 @@
             </div>
           </div>
 
-          <!-- 04 — Stock Market Dashboard -->
+          <!-- 05 — Stock Market Dashboard -->
           <div class="pj" data-pj>
             <div class="pj-bg"></div>
-            <div class="pnum">04</div>
+            <div class="pnum">05</div>
             <div class="pbody">
               <div class="phead">
                 <div>
@@ -2186,7 +2242,7 @@
                     target="_blank"
                     rel="noreferrer"
                     class="ch ch-g"
-                  >
+                   aria-label="GitHub Repository">
                     <svg
                       width="11"
                       height="11"
@@ -2204,7 +2260,7 @@
                     target="_blank"
                     rel="noreferrer"
                     class="ch ch-l"
-                    >↗ Live</a
+                     aria-label="Live Website">↗ Live</a
                   >
                 </div>
               </div>
@@ -2221,7 +2277,7 @@
                       src="/stock%20market.png"
                       alt="Stock Dashboard"
                       style="width: 100%; height: 100%; object-fit: cover"
-                    />
+                    loading="lazy" decoding="async" />
                   </div>
                 </div>
                 <div>
@@ -2274,12 +2330,12 @@
 
     <!-- ABOUT -->
     <section id="about">
-      <img src="/leaf 3.png" class="about-leaf" alt="" />
+      <img src="/leaf 3.png" class="about-leaf" alt="" loading="lazy" decoding="async" />
       <div class="w">
         <div class="about-container">
           <div class="about-header">
             <div class="pfp-wrap">
-              <img src="/pfp%20vikram.JPG" alt="Vikram Kumar" class="pfp-img" />
+              <img src="/pfp%20vikram.JPG" alt="Vikram Kumar" class="pfp-img" loading="lazy" decoding="async" />
             </div>
             <div class="about-label">Who I am</div>
           </div>
@@ -2311,19 +2367,19 @@
                 >.
               </p>
             </div>
-            <img src="/leaf 3.png" class="about-leaf2" alt="" />
+            <img src="/leaf 3.png" class="about-leaf2" alt="" loading="lazy" decoding="async" />
 
             <div class="about-stats">
               <div class="stat-item">
-                <h4>600<span>+</span></h4>
+                <h3>600<span>+</span></h3>
                 <p>Problems Solved</p>
               </div>
               <div class="stat-item">
-                <h4>10<span>+</span></h4>
+                <h3>10<span>+</span></h3>
                 <p>Projects Shipped</p>
               </div>
               <div class="stat-item">
-                <h4>2<span>★</span></h4>
+                <h3>2<span>★</span></h3>
                 <p>CodeChef Rating</p>
               </div>
             </div>
@@ -2432,98 +2488,98 @@
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
               alt=""
-            /><span class="skill-name">React.js</span>
+            loading="lazy" decoding="async" /><span class="skill-name">React.js</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
               alt=""
-            /><span class="skill-name">Next.js</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Next.js</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
               alt=""
-            /><span class="skill-name">TypeScript</span>
+            loading="lazy" decoding="async" /><span class="skill-name">TypeScript</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
               alt=""
-            /><span class="skill-name">Tailwind CSS</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Tailwind CSS</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
               alt=""
-            /><span class="skill-name">Redux</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Redux</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
               alt=""
-            /><span class="skill-name">JavaScript</span>
+            loading="lazy" decoding="async" /><span class="skill-name">JavaScript</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
               alt=""
-            /><span class="skill-name">HTML5</span>
+            loading="lazy" decoding="async" /><span class="skill-name">HTML5</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
               alt=""
-            /><span class="skill-name">CSS3</span>
+            loading="lazy" decoding="async" /><span class="skill-name">CSS3</span>
           </div>
           <!-- Duplicate for infinite loop -->
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
               alt=""
-            /><span class="skill-name">React.js</span>
+            loading="lazy" decoding="async" /><span class="skill-name">React.js</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
               alt=""
-            /><span class="skill-name">Next.js</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Next.js</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
               alt=""
-            /><span class="skill-name">TypeScript</span>
+            loading="lazy" decoding="async" /><span class="skill-name">TypeScript</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
               alt=""
-            /><span class="skill-name">Tailwind CSS</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Tailwind CSS</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
               alt=""
-            /><span class="skill-name">Redux</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Redux</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
               alt=""
-            /><span class="skill-name">JavaScript</span>
+            loading="lazy" decoding="async" /><span class="skill-name">JavaScript</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
               alt=""
-            /><span class="skill-name">HTML5</span>
+            loading="lazy" decoding="async" /><span class="skill-name">HTML5</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
               alt=""
-            /><span class="skill-name">CSS3</span>
+            loading="lazy" decoding="async" /><span class="skill-name">CSS3</span>
           </div>
         </div>
 
@@ -2533,98 +2589,98 @@
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
               alt=""
-            /><span class="skill-name">Node.js</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Node.js</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
               alt=""
-            /><span class="skill-name">Python</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Python</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
               alt=""
-            /><span class="skill-name">PostgreSQL</span>
+            loading="lazy" decoding="async" /><span class="skill-name">PostgreSQL</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
               alt=""
-            /><span class="skill-name">MongoDB</span>
+            loading="lazy" decoding="async" /><span class="skill-name">MongoDB</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
               alt=""
-            /><span class="skill-name">Redis</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Redis</span>
           </div>
           <!-- <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
               alt=""
-            /><span class="skill-name">FastAPI</span>
+            loading="lazy" decoding="async" /><span class="skill-name">FastAPI</span>
           </div> -->
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
               alt=""
-            /><span class="skill-name">Java</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Java</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
               alt=""
-            /><span class="skill-name">SQL</span>
+            loading="lazy" decoding="async" /><span class="skill-name">SQL</span>
           </div>
           <!-- Duplicate for infinite loop -->
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
               alt=""
-            /><span class="skill-name">Node.js</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Node.js</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
               alt=""
-            /><span class="skill-name">Python</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Python</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
               alt=""
-            /><span class="skill-name">PostgreSQL</span>
+            loading="lazy" decoding="async" /><span class="skill-name">PostgreSQL</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
               alt=""
-            /><span class="skill-name">MongoDB</span>
+            loading="lazy" decoding="async" /><span class="skill-name">MongoDB</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
               alt=""
-            /><span class="skill-name">Redis</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Redis</span>
           </div>
           <!-- <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
               alt=""
-            /><span class="skill-name">FastAPI</span>
+            loading="lazy" decoding="async" /><span class="skill-name">FastAPI</span>
           </div> -->
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
               alt=""
-            /><span class="skill-name">Java</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Java</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
               alt=""
-            /><span class="skill-name">SQL</span>
+            loading="lazy" decoding="async" /><span class="skill-name">SQL</span>
           </div>
         </div>
 
@@ -2634,46 +2690,46 @@
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
               alt=""
-            /><span class="skill-name">Git</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Git</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
               alt=""
-            /><span class="skill-name">GitHub</span>
+            loading="lazy" decoding="async" /><span class="skill-name">GitHub</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
               alt=""
-            /><span class="skill-name">Docker</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Docker</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
               alt=""
-            /><span class="skill-name">VS Code</span>
+            loading="lazy" decoding="async" /><span class="skill-name">VS Code</span>
           </div>
           <div class="skill-item">
             <img
               src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
               alt=""
-            /><span class="skill-name">Postman</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Postman</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg"
               alt=""
-            /><span class="skill-name">Jupyter</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Jupyter</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
               alt=""
-            /><span class="skill-name">AWS</span>
+            loading="lazy" decoding="async" /><span class="skill-name">AWS</span>
           </div>
           <div class="skill-item">
-            <img src="/tanstack.png" alt="" /><span class="skill-name"
+            <img src="/tanstack.png" alt="" loading="lazy" decoding="async" /><span class="skill-name"
               >TanStack Query</span
             >
           </div>
@@ -2682,46 +2738,46 @@
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
               alt=""
-            /><span class="skill-name">Git</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Git</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
               alt=""
-            /><span class="skill-name">GitHub</span>
+            loading="lazy" decoding="async" /><span class="skill-name">GitHub</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
               alt=""
-            /><span class="skill-name">Docker</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Docker</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
               alt=""
-            /><span class="skill-name">VS Code</span>
+            loading="lazy" decoding="async" /><span class="skill-name">VS Code</span>
           </div>
           <div class="skill-item">
             <img
               src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
               alt=""
-            /><span class="skill-name">Postman</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Postman</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg"
               alt=""
-            /><span class="skill-name">Jupyter</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Jupyter</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
               alt=""
-            /><span class="skill-name">AWS</span>
+            loading="lazy" decoding="async" /><span class="skill-name">AWS</span>
           </div>
           <div class="skill-item">
-            <img src="/tanstack.png" alt="" /><span class="skill-name"
+            <img src="/tanstack.png" alt="" loading="lazy" decoding="async" /><span class="skill-name"
               >TanStack Query</span
             >
           </div>
@@ -2733,74 +2789,74 @@
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
               alt=""
-            /><span class="skill-name">PyTorch</span>
+            loading="lazy" decoding="async" /><span class="skill-name">PyTorch</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg"
               alt=""
-            /><span class="skill-name">Scikit-Learn</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Scikit-Learn</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
               alt=""
-            /><span class="skill-name">OpenCV</span>
+            loading="lazy" decoding="async" /><span class="skill-name">OpenCV</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
               alt=""
-            /><span class="skill-name">Pandas</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Pandas</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
               alt=""
-            /><span class="skill-name">NumPy</span>
+            loading="lazy" decoding="async" /><span class="skill-name">NumPy</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg"
               alt=""
-            /><span class="skill-name">Matplotlib</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Matplotlib</span>
           </div>
           <!-- Duplicate for infinite loop -->
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
               alt=""
-            /><span class="skill-name">PyTorch</span>
+            loading="lazy" decoding="async" /><span class="skill-name">PyTorch</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg"
               alt=""
-            /><span class="skill-name">Scikit-Learn</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Scikit-Learn</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
               alt=""
-            /><span class="skill-name">OpenCV</span>
+            loading="lazy" decoding="async" /><span class="skill-name">OpenCV</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
               alt=""
-            /><span class="skill-name">Pandas</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Pandas</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
               alt=""
-            /><span class="skill-name">NumPy</span>
+            loading="lazy" decoding="async" /><span class="skill-name">NumPy</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg"
               alt=""
-            /><span class="skill-name">Matplotlib</span>
+            loading="lazy" decoding="async" /><span class="skill-name">Matplotlib</span>
           </div>
         </div>
       </div>
@@ -2810,7 +2866,7 @@
 
     <!-- CONTACT -->
     <section id="contact">
-      <img src="/leaf 8.png" class="contact-leaf" alt="" />
+      <img src="/leaf 8.png" class="contact-leaf" alt="" loading="lazy" decoding="async" />
       <div class="w">
         <div class="sl">03 — Contact</div>
         <h2 class="chead">
@@ -2867,12 +2923,16 @@
         </div>
       </div>
     </section>
+    </main>
 
     <footer>
       vikram.kumar &mdash; built with intention, shipped with care &mdash;
       &copy; 2026
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
     <script>
       /* ── INIT CURSOR ── */
       // (function(){
